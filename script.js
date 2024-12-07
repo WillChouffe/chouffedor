@@ -17,9 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Quest Data
     const quests = [
+        {
+            question: "Olala! Tête tourner et tout mouillé… Vite, aidez! Où suis-je?",
+            hint: "La soirée, là où il fait tout noir et où vivent les siens, démarre.",
+            answer: "bar"
+        },     
         { question: "La soirée, là où il fait tout noir et où vivent les siens, démarre.", hint: "Cherchez les lutins basques!", answer: "Grottes de Sare" },
         { question: "Ils n’osent s’y gaver car la plus belle leur y fût offerte.", hint: "On y tourne tous en rond.", answer: "Le pont des Laminaks." },
-        { question: "QUESTION1", hint: "HINT1", answer: "1" },        
+          
     ];
 
     // Functions
