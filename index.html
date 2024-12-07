@@ -1,16 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test CKEditor</title>
-    <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+    <meta name="description" content="La Chouffe d'Or - Jeu interactif de quêtes">
+    <title>La Chouffe d'Or</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Éditeur CKEditor</h1>
-    <textarea name="editor" id="editor">Écrivez ici...</textarea>
-    <script>
-        CKEDITOR.replace('editor'); // Initialisation de CKEditor
-    </script>
+    <div class="container">
+        <div id="page-accueil" class="page">
+            <h1 class="title">La Chouffe d'Or</h1>
+            <button id="start-button">Démarrer</button>
+        </div>
+
+        <div id="page-quete" class="page hidden">
+            <div class="card">
+                <img src="bienvenue.png" alt="Illustration" class="quest-image">
+                <blockquote class="citation">"Courage is the magic that turns dreams into reality."</blockquote>
+                <p class="question">Quelle créature mythique garde les trésors des montagnes ?</p>
+                <button id="hint-button">Indice</button>
+                <p id="hint-text" class="hidden">Elle est petite, aime l'or, et déteste les voleurs.</p>
+                <input type="text" id="response" placeholder="Votre réponse">
+                <button id="validate-button">Valider</button>
+            </div>
+        </div>
+
+        <div id="page-finale" class="page hidden">
+            <h1 class="title">Félicitations !</h1>
+            <p class="final-message">Vous avez trouvé la Chouffe d'Or !</p>
+            <p class="final-code">Code : CHOUFFE2024</p>
+            <button id="restart-button">Rejouer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
