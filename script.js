@@ -20,12 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             question: "Olala! Tête tourner et tout mouillé… Vite, aidez! Où suis-je?",
             hint: "La soirée, là où il fait tout noir et où vivent les siens, démarre.",
-            answer: "grottes de sare"
+            answer: "grottes de sare",
+            image: "images/scene1.webp",
+            citation: "“Olala! Tête tourner et tout mouillé… Vite, aidez!” Où suis?”",
         },   
         {
             question: "Ils n'osent s'y gaver car la plus belle leur y fût offerte.",
             hint: "On y tourne tous en rond.",
-            answer: "Le pont des Laminaks."
+            answer: "le pont des laminaks",
+            image: "images/scene2.webp",
+            citation: "Au QG, mes potes, je partis rejoindre, le cadeau à livrer avec, sous le bras.",
         },   
              
     ];
