@@ -16,6 +16,17 @@ body {
     height: 100vh;
 }
 
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    vertical-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 .page {
     display: none;
     flex-direction: column;
@@ -27,16 +38,17 @@ body {
     display: flex;
 }
 
-.title {
+.title-main {
     font-family: 'Pacifico', cursive;
     font-size: 3rem; /* Adjust size as needed */
     font-weight: bold; /* Makes the font appear bolder */
     color: black; /* Main font color */
     text-shadow: 
-        2px 2px 0 yellow,   /* Yellow shadow offset to create the effect */
-        4px 4px 0 yellow,   /* Add depth with a stronger shadow */
-        6px 6px 0 yellow;   /* Optional: Enhance the glow with more layers */
+        2px 2px 0 #ff8c00,   /* Yellow shadow offset to create the effect */
+        4px 4px 0 #ffbd03,   /* Add depth with a stronger shadow */
+        6px 6px 0 #f7ff9c;   /* Optional: Enhance the glow with more layers */
     text-align: center; /* Center-align the text */
+    vertical-align: center;
 }
 
 .card {

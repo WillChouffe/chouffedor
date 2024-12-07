@@ -11,14 +11,15 @@
 <body>
     <div class="container">
         <div id="page-accueil" class="page">
-            <h1 class="title">Bienvenue dans le jeu de La Chouffe d'Or</h1>
-            <img src="images/bienvenue.png"alt="Illustration" class="first-image">
+            <h1 class="title-main">Bienvenue dans le jeu de La Chouffe d'Or</h1>
+           /* <img src="images/bienvenue.png"alt="Illustration" class="first-image"> */
             <button id="start-button">Let's go</button>
+
         </div>
 
         <div id="page-quete" class="page hidden">
             <div class="card">
-                <img src="images/scene1.webp" alt="Illustration" class="quest-image">
+                <img src="images/scene2.webp" alt="Illustration" class="quest-image">
                 <blockquote class="citation">“Au QG, mes potes, je partis rejoindre, le cadeau à livrer avec, sous le bras.”</blockquote>
                 <p class="question">“Ils n’osent s’y gaver car la plus belle leur y fût offerte.“</p>
                 <button id="hint-button">Indice</button>
@@ -46,26 +47,7 @@
             <p class="final-code">Code : CHOUFFE2024</p>
             <button id="restart-button">Rejouer</button>
 
-            <audio id="background-music" autoplay loop>
-                <source src="audio/background-music.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas la lecture audio.
-            </audio>
-
-            <button id="start-music">Lancer la musique</button>
-            <audio id="background-music" loop>
-                <source src="audio/background-music.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas la lecture audio.
-            </audio>
             
-            <script>
-                const music = document.getElementById("background-music");
-                const startButton = document.getElementById("start-music");
-            
-                startButton.addEventListener("click", () => {
-                    music.play();
-                    startButton.style.display = "none"; // Hide the button after starting the music
-                });
-            </script> 
 
         </div>
     </div>
