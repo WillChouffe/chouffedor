@@ -10,6 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const hintButton = document.getElementById("hint-button");
     const hintText = document.getElementById("hint-text");
 
+    const music = document.getElementById("background-music");
+
+    // Optional: Start music only after user interaction (to respect autoplay policies)
+    startButton.addEventListener("click", () => {
+        if (music.paused) {
+            music.play();
+        }
+    });
+
+    // Ensure the music continues playing across sections
+    const pageChangeButtons = document.querySelectorAll(".page button");
+    pageChangeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            if (music.paused) {
+                music.play(); // Restart the music if paused
+            }
+        });
+    });
+
     let currentQuestIndex = 0;
 
     const quests = [
@@ -64,20 +83,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set the initial page
     accueilPage.classList.add("active");
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const music = document.getElementById("background-music");
-        const toggleMusicButton = document.getElementById("toggle-music");
-    
-        toggleMusicButton.addEventListener("click", () => {
-            if (music.paused) {
-                music.play();
-                toggleMusicButton.textContent = "Couper la musique";
-            } else {
-                music.pause();
-                toggleMusicButton.textContent = "Reprendre la musique";
-            }
-        });
-    });
 
 });
