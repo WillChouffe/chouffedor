@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
     margin: 0;
@@ -27,10 +28,16 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
-    color: #FFD700;
-    margin-bottom: 20px;
-   }
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the font appear bolder */
+    color: black; /* Main font color */
+    text-shadow: 
+        2px 2px 0 yellow,   /* Yellow shadow offset to create the effect */
+        4px 4px 0 yellow,   /* Add depth with a stronger shadow */
+        6px 6px 0 yellow;   /* Optional: Enhance the glow with more layers */
+    text-align: center; /* Center-align the text */
+}
 
 .card {
     background: rgba(255, 255, 255, 0.9);
