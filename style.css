@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Noto+Sans+SC:wght@100..900&display=swap');
+
+.title-main {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the font appear bolder */
+    color: #3d3d3d; /* Main font color */
+    text-shadow: 
+        2px 2px 0 #ff8c00,   /* Yellow shadow offset to create the effect */
+        4px 4px 0 #ffbd03,   /* Add depth with a stronger shadow */
+        6px 6px 0 #f7ff9c;   /* Optional: Enhance the glow with more layers */
+    text-align: center; /* Center-align the text */
+    vertical-align: center;
+}
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 400;
+    font-style: normal;
     background: url('images/background-simple.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -38,18 +54,7 @@ body {
     display: flex;
 }
 
-.title-main {
-    font-family: 'Pacifico', cursive;
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Makes the font appear bolder */
-    color: #3d3d3d; /* Main font color */
-    text-shadow: 
-        2px 2px 0 #ff8c00,   /* Yellow shadow offset to create the effect */
-        4px 4px 0 #ffbd03,   /* Add depth with a stronger shadow */
-        6px 6px 0 #f7ff9c;   /* Optional: Enhance the glow with more layers */
-    text-align: center; /* Center-align the text */
-    vertical-align: center;
-}
+
 
 .card {
     background: rgba(255, 255, 255, 0.9);
