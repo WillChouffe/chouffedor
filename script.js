@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentQuestIndex = 0;
 
     const quests = [
-        { question: "Quelle créature mythique garde les trésors des montagnes ?", hint: "Elle aime l'or.", answer: "nain" },
-        { question: "Quelle est la capitale de la France ?", hint: "C'est la Ville Lumière.", answer: "paris" },
-        { question: "Combien y a-t-il de jours dans une année bissextile ?", hint: "Plus d'un an normal.", answer: "366" },
+        { question: "“La soirée, là où il fait tout noir et où vivent les siens, démarre.“", hint: "Cherchez les lutins basques.", answer: "Grottes de Sare" },
+        { question: "Ils n’osent s’y gaver car la plus belle leur y fût offerte.", hint: "On y tourne tous en rond.", answer: "Le pont des Laminaks." },
+        { question: "“A l’ouest ils aiment être, et pour une fois au Nord ils partirent”.", hint: "Plus d'un an normal.", answer: "366" },
         { question: "Quel métal précieux est symbolisé par Au ?", hint: "C'est jaune et très cher.", answer: "or" },
         { question: "Quel est le plus grand mammifère marin ?", hint: "Il vit dans les océans.", answer: "baleine" },
         { question: "Combien de couleurs sur un arc-en-ciel ?", hint: "Pensez aux sept nains.", answer: "7" },
@@ -73,4 +73,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set the initial page
     accueilPage.classList.add("active");
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const music = document.getElementById("background-music");
+        const toggleMusicButton = document.getElementById("toggle-music");
+    
+        toggleMusicButton.addEventListener("click", () => {
+            if (music.paused) {
+                music.play();
+                toggleMusicButton.textContent = "Couper la musique";
+            } else {
+                music.pause();
+                toggleMusicButton.textContent = "Reprendre la musique";
+            }
+        });
+    });
+
 });
