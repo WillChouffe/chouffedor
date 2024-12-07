@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Noto+Sans+SC:wght@100..900&display=swap');
 
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center-align all elements */
+    justify-content: center; /* Center-align vertically */
+    height: 100vh;          /* Full viewport height */
+    text-align: center;     /* Center the text */
+    background-color: #ffeb99; /* Adjust as needed for your design */
+}
+
 .title-main {
     font-family: 'Pacifico', cursive;
     font-size: 3rem; /* Adjust size as needed */
@@ -12,6 +22,17 @@
     vertical-align: center;
 }
 
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f1a800; /* Match the theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 body {
     margin: 0;
     font-family: "Mountains of Christmas", serif;
@@ -21,13 +42,6 @@ body {
     background-size: cover;
     color: #333;
     text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .welcome {
@@ -75,7 +89,7 @@ body {
     margin-bottom: 20px;
 }
 
-button {
+.button-2 {
     background-color: #ffcf03;
     color: #333;
     border: none;
