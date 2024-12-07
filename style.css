@@ -8,7 +8,6 @@
     justify-content: center; /* Center-align vertically */
     height: 100vh;          /* Full viewport height */
     text-align: center;     /* Center the text */
-    background-color: #ffeb99; /* Adjust as needed for your design */
 }
 
 .title-main {
@@ -26,7 +25,7 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: #f1a800; /* Match the theme */
-    color: white;
+    color: #f1a800;
     border: none;
     border-radius: 5px;
     cursor: pointer;
