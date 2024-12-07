@@ -42,7 +42,7 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 3rem; /* Adjust size as needed */
     font-weight: bold; /* Makes the font appear bolder */
-    color: black; /* Main font color */
+    color: #3d3d3d; /* Main font color */
     text-shadow: 
         2px 2px 0 #ff8c00,   /* Yellow shadow offset to create the effect */
         4px 4px 0 #ffbd03,   /* Add depth with a stronger shadow */
@@ -72,7 +72,7 @@ body {
 }
 
 button {
-    background-color: #FFD700;
+    background-color: #3d3d3d;
     color: #333;
     border: none;
     padding: 10px 20px;
