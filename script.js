@@ -13,17 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentQuestIndex = 0;
 
     const quests = [
-        { question: "“La soirée, là où il fait tout noir et où vivent les siens, démarre.“", hint: "Cherchez les lutins basques.", answer: "Grottes de Sare" },
+        { question: "La soirée, là où il fait tout noir et où vivent les siens, démarre.", hint: "Cherchez les lutins basques!", answer: "Grottes de Sare" },
         { question: "Ils n’osent s’y gaver car la plus belle leur y fût offerte.", hint: "On y tourne tous en rond.", answer: "Le pont des Laminaks." },
-        { question: "“A l’ouest ils aiment être, et pour une fois au Nord ils partirent”.", hint: "Plus d'un an normal.", answer: "366" },
-        { question: "Quel métal précieux est symbolisé par Au ?", hint: "C'est jaune et très cher.", answer: "or" },
-        { question: "Quel est le plus grand mammifère marin ?", hint: "Il vit dans les océans.", answer: "baleine" },
-        { question: "Combien de couleurs sur un arc-en-ciel ?", hint: "Pensez aux sept nains.", answer: "7" },
-        { question: "Quel oiseau est souvent associé à la paix ?", hint: "Il est blanc.", answer: "colombe" },
-        { question: "Quelle planète est la plus proche du Soleil ?", hint: "C'est aussi un métal liquide.", answer: "mercure" },
-        { question: "Quel est le carré de 12 ?", hint: "C'est plus que 100.", answer: "144" },
-        { question: "Quel instrument a 88 touches ?", hint: "Il est souvent noir et blanc.", answer: "piano" },
-        { question: "Quel animal est connu pour sa mémoire ?", hint: "C'est très grand.", answer: "éléphant" }
     ];
 
     function loadQuest(index) {
