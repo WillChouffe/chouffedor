@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentQuestIndex = 0;
 
+
+
     // Quest Data
     const quests = [
         {
@@ -37,10 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Functions
     function loadQuest(index) {
         const quest = quests[index];
-        document.querySelector(".question").textContent = quest.question;
+        document.querySelector("#quest-question").textContent = quest.question;
         document.querySelector("#hint-text").textContent = quest.hint;
-        document.querySelector("#response").value = ""; // Clear input field
-        hintText.classList.add("hidden"); // Hide the hint initially
+        document.querySelector("#response").value = ""; // Clear the input field
+        document.querySelector("#quest-image").src = quest.image; // Update the image
+        document.querySelector("#quest-citation").textContent = quest.citation; // Update the citation
+        document.querySelector("#hint-text").classList.add("hidden"); // Hide the hint
     }
 
     function playMusic() {
