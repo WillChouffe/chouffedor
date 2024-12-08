@@ -2,10 +2,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Global Variables
     const accueilPage = document.getElementById("page-accueil");
+    const instructionsPage = document.getElementById("page-instructions");
     const quetePage = document.getElementById("page-quete");
     const finalePage = document.getElementById("page-finale");
 
     const startButton = document.getElementById("start-button");
+    const startQuestsButton = document.getElementById("start-quests-button");
     const validateButton = document.getElementById("validate-button");
     const restartButton = document.getElementById("restart-button");
     const hintButton = document.getElementById("hint-button");
@@ -14,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const music = document.getElementById("background-music");
 
     let currentQuestIndex = 0;
-
-
 
     // Quest Data
     const quests = [
@@ -34,17 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
             citation: "Au QG, mes potes, je partis rejoindre, le cadeau à livrer avec, sous le bras.",
         },   
              
-    ];
+    ];;
 
     // Functions
     function loadQuest(index) {
         const quest = quests[index];
-        document.querySelector("#quest-question").textContent = quest.question;
+        document.querySelector(".question").textContent = quest.question;
         document.querySelector("#hint-text").textContent = quest.hint;
         document.querySelector("#response").value = ""; // Clear the input field
         document.querySelector("#quest-image").src = quest.image; // Update the image
         document.querySelector("#quest-citation").textContent = quest.citation; // Update the citation
-        document.querySelector("#hint-text").classList.add("hidden"); // Hide the hint
+        hintText.classList.add("hidden"); // Hide the hint initially
     }
 
     function playMusic() {
@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
     startButton.addEventListener("click", () => {
         accueilPage.classList.remove("active");
         accueilPage.classList.add("hidden");
+        instructionsPage.classList.remove("hidden");
+        instructionsPage.classList.add("active");
+    });
+
+    startQuestsButton.addEventListener("click", () => {
+        instructionsPage.classList.remove("active");
+        instructionsPage.classList.add("hidden");
         quetePage.classList.remove("hidden");
         quetePage.classList.add("active");
         loadQuest(currentQuestIndex); // Load the first quest
@@ -71,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     validateButton.addEventListener("click", () => {
         const userResponse = document.querySelector("#response").value.trim().toLowerCase();
-        console.log(`User Answer: ${userResponse}, Correct Answer: ${quests[currentQuestIndex].answer}`); // Debugging
+        console.log(`User Answer: ${userResponse}, Expected Answer: ${quests[currentQuestIndex].answer}`); // Debugging
         if (userResponse === quests[currentQuestIndex].answer) {
             currentQuestIndex++;
             if (currentQuestIndex < quests.length) {

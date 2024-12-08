@@ -122,3 +122,44 @@ button:hover {
 .hidden {
     display: none;
 }
+
+#page-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #ffeb99; /* Même couleur que la page d'accueil */
+}
+
+#page-instructions h2 {
+    font-size: 2rem;
+    color: #f1a800;
+}
+
+#page-instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#page-instructions li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #744700;
+}
+
+#start-quests-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f1a800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-quests-button:hover {
+    background-color: #e08d00;
+}
